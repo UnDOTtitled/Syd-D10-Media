@@ -11,16 +11,93 @@
         {
             "type": "path",
             "url": "upstream-configuration"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "enyo/dropzone",
+                "version": "5.9.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/enyo/dropzone/archive/v5.9.3.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/imagesloaded",
+                "version": "5.0.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v5.0.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/masonry",
+                "version": "4.2.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v4.2.2.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
-        "pantheon-upstreams/upstream-configuration": "dev-main",
-        "composer/installers": "^1.9",
-        "drupal/core-composer-scaffold": "^10",
-        "drupal/core-recommended": "^10",
-        "pantheon-systems/drupal-integrations": "^10",
-        "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^11 || ^12"
+        "desandro/imagesloaded": "^5.5",
+        "desandro/masonry": "^5.5",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/adminimal_theme": "^1.6",
+        "drupal/block_content_permissions": "^1.10",
+        "drupal/block_permissions": "^1.1",
+        "drupal/block_region_permissions": "^1.4",
+        "drupal/config_ignore": "^2.3",
+        "drupal/content_lock": "^2.2",
+        "drupal/ctools": "^3.4",
+        "drupal/devel": "^4.1",
+        "drupal/devel_entity_updates": "^3.0",
+        "drupal/devel_kint_extras": "^1.0",
+        "drupal/dropzonejs": "^2.4",
+        "drupal/eck": "^1.0@beta",
+        "drupal/embed": "^1.4",
+        "drupal/entity_browser": "^2.5",
+        "drupal/entity_embed": "^1.1",
+        "drupal/field_group": "^3.1",
+        "drupal/field_tools": "^1.0@alpha",
+        "drupal/file_browser": "^1.3",
+        "drupal/imageapi_optimize": "^4.0@beta",
+        "drupal/imageapi_optimize_resmushit": "^2.0@beta",
+        "drupal/imagemagick": "^3.1",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/linkit": "^5.0-beta12",
+        "drupal/m4032404": "^1.0@alpha",
+        "drupal/menu_admin_per_menu": "^1.3",
+        "drupal/menu_block": "^1.6",
+        "drupal/menu_link_attributes": "^1.1",
+        "drupal/metatag": "^1.15",
+        "drupal/pathauto": "^1.8",
+        "drupal/publishcontent": "^1.2",
+        "drupal/rebuild_cache_access": "^1.7",
+        "drupal/redirect": "^1.6",
+        "drupal/rename_admin_paths": "^2.0",
+        "drupal/robotstxt": "^1.4",
+        "drupal/roleassign": "^1.0@beta",
+        "drupal/smart_trim": "^1.3",
+        "drupal/stage_file_proxy": "^1.1",
+        "drupal/token": "^1.9",
+        "drupal/twig_tweak": "^3.0",
+        "drupal/video_embed_field": "^2.4",
+        "drupal/view_unpublished": "^1.0",
+        "drupal/xmlsitemap": "^1.0",
+        "enyo/dropzone": "^5.5",
+        "kint-php/kint": "^3.3",
+        "pantheon-upstreams/upstream-configuration": "dev-main"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -28,14 +105,16 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./web"
             },
-            "allowed-packages": ["pantheon-systems/drupal-integrations"],
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations"
+            ],
             "file-mapping": {
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
@@ -43,16 +122,36 @@
             }
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "web/private/scripts/quicksilver/{$name}/": [
+                "type:quicksilver-script"
+            ]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
@@ -61,15 +160,22 @@
         "enable-patching": true
     },
     "autoload": {
-        "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
+        "classmap": [
+            "upstream-configuration/scripts/ComposerScripts.php"
+        ]
     },
     "scripts": {
-        "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
-        "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate"]
+        "pre-update-cmd": [
+            "DrupalComposerManaged\\ComposerScripts::preUpdate"
+        ],
+        "post-update-cmd": [
+            "DrupalComposerManaged\\ComposerScripts::postUpdate"
+        ]
     },
     "config": {
         "preferred-install": "dist",
-        "sort-packages": false,
+        "optimize-autoloader": true,
+        "sort-packages": true,
         "platform": {
             "php": "8.2.0"
         },

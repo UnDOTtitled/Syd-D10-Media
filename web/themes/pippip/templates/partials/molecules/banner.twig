@@ -1,0 +1,44 @@
+{% if node.field_banner_image.entity.field_media_image_3.entity.fileuri |render %}
+	<div class="m-banner m-banner--{{ ct }}" aria-label="Page banner">
+
+		<div class="m-banner__copy">
+			<div class="grid">
+				<div class="col-sm-12">
+					
+					{% if node.title.value %}
+						<h1>
+							{{ node.title.value }}
+						</h1>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+		
+		<figure class="m-banner__image">
+
+			{% set imageUrl = node.field_banner_image.entity.field_media_image_3.entity.fileuri %}
+			{% include '@pippip/partials/atoms/banner-image.twig' with {image: imageUrl, alt: content.field_banner_image[0]['#item'].alt} %}
+
+			{% include '@pippip/partials/atoms/image-credit.twig' with {credit: node.field_banner_image.entity.field_image_credit.getValue()[0]['value']} %}
+		</figure>
+
+	</div>
+
+{% else %}
+
+	<div class="m-no-banner m-no-banner--{{ ct }}" aria-label="Page banner">
+		<div class="grid">
+			<div class="col-12">
+
+				{% if node.title.value %}
+					<h1>
+						{{ node.title.value }}
+					</h1>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+
+{% endif %}
