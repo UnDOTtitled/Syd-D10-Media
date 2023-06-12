@@ -51,9 +51,9 @@
         {
             "type": "package",
             "package": {
-                "name": "drupal/adminimal_theme",
+                "name": "unt/adminimal_theme",
                 "version": "1.x-dev@dev",
-                "type": "type:drupal-theme",
+                "type": "drupal-theme",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.x-dev.zip",
                     "type": "zip"
@@ -68,6 +68,8 @@
         "drupal/block_content_permissions": "^1.11",
         "drupal/block_permissions": "^1.3",
         "drupal/block_region_permissions": "^1.5",
+        "drupal/ckeditor": "^1.0",
+        "drupal/classy": "^1.0",
         "drupal/config_ignore": "^2.4",
         "drupal/content_lock": "^2.3",
         "drupal/ctools": "^4.0",
@@ -99,6 +101,7 @@
         "drupal/rename_admin_paths": "^2.0@dev",
         "drupal/robotstxt": "^1.5",
         "drupal/roleassign": "^2.0",
+        "drupal/seven": "^1.0",
         "drupal/smart_trim": "^2.1",
         "drupal/stage_file_proxy": "^2.0",
         "drupal/token": "^1.11",
@@ -108,7 +111,8 @@
         "drupal/xmlsitemap": "^1.4",
         "enyo/dropzone": "^5.9",
         "kint-php/kint": "^4.2",
-        "pantheon-upstreams/upstream-configuration": "dev-main"
+        "pantheon-upstreams/upstream-configuration": "dev-main",
+        "unt/adminimal_theme": "1.x-dev@dev"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -170,7 +174,7 @@
         },
         "enable-patching": true,
         "patches": {
-            "drupal/adminimal_theme": {
+            "unt/adminimal_theme": {
                 "Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-05-23/3296538-12.patch"
             }
         }
