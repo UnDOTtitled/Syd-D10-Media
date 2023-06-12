@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XFsiaRqmEPhPSCjEYxLLxc5XwC6ngafCO0EcZbLpS0Y
+id: administrator
+label: Administrator
+weight: 4
+is_admin: true
+permissions: {  }
