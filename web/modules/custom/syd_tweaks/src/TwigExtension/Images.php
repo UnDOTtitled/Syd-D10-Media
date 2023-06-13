@@ -4,17 +4,19 @@ namespace Drupal\syd_tweaks\TwigExtension;
 use Drupal\node\Entity\Node;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 
-class Images extends \Twig_Extension {
+class Images extends AbstractExtension {
   /**
    * Generates a list of all Twig functions that this extension defines.
    */
   public function getFunctions(){
     return array(
-      new \Twig_SimpleFunction('image_style', array($this, 'imageStyle'), array('is_safe' => array('html'))),
+      new TwigFunction('image_style', array($this, 'imageStyle'), array('is_safe' => array('html'))),
     );
   }
 

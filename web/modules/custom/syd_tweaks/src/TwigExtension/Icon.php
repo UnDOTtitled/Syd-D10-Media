@@ -4,8 +4,10 @@ namespace Drupal\syd_tweaks\TwigExtension;
 
 use Twig\TwigFunction;
 use \Drupal\Core\File\FileSystem;
+use Twig\Extension\AbstractExtension;
 
-class Icon extends \Twig_Extension
+
+class Icon extends AbstractExtension
 {
     public function getFunctions()
     {
@@ -15,7 +17,7 @@ class Icon extends \Twig_Extension
             })
         ];
     }
-    
+
     /**
     * Get Icon
     * Gets an icon from the filesystem
@@ -30,16 +32,16 @@ class Icon extends \Twig_Extension
         $file_handle = $file;
         $theme = \Drupal::theme()->getActiveTheme();
         $themeUri = $theme->getPath();
-        
+
         if (file_exists(realpath($themeUri) . $path . $file . $ext)) {
             $file = realpath($themeUri) . $path . $file . $ext;
-            
+
             ob_start();
             $return = require($file);
             $data = ob_get_clean();
             echo $data;
         }
-        
+
         return null;
     }
 }
