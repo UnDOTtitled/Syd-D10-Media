@@ -14,7 +14,6 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
-  content_lock: 0
   ctools: 0
   ctools_entity_mask: 0
   dblog: 0
