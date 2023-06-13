@@ -1,3 +1,4 @@
+uuid: a7f0425a-609e-40b3-b084-7c4af6e6e29e
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +8,7 @@ name: linkit_result_thumbnail
 label: 'Linkit result thumbnail'
 effects:
   2943df29-38ea-459c-ba1d-290489bb1807:
+    uuid: ''
     id: image_scale_and_crop
     weight: 1
     data:

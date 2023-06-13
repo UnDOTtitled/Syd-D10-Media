@@ -1,3 +1,4 @@
+uuid: 0d6e903b-1bf9-42c1-a419-27343d7ea8de
 langcode: en
 status: true
 dependencies:
@@ -43,12 +44,3 @@ filters:
     status: true
     weight: 0
     settings: {  }
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_view_modes: {  }
-      allowed_media_types: {  }

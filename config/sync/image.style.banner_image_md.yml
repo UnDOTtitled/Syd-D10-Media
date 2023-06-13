@@ -1,3 +1,4 @@
+uuid: 84617972-6bc5-41dd-a97b-cd9e1ba2aec4
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +8,7 @@ name: banner_image_md
 label: 'Banner image md'
 effects:
   bd7a2e84-059a-4321-bd84-c4bfeea7b97e:
+    uuid: ''
     id: image_scale
     weight: 1
     data:

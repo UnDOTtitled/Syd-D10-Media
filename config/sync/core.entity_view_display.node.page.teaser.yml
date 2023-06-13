@@ -1,3 +1,4 @@
+uuid: 305e0ee0-9d8e-4a9d-a446-2fde94343aca
 langcode: en
 status: true
 dependencies:
@@ -26,13 +27,13 @@ content:
       trim_suffix: ''
       wrap_output: false
       wrap_class: trimmed
-      more_link: false
-      more_class: more-link
-      more_text: More
       summary_handler: full
       trim_options:
         text: false
         trim_zero: false
+      more_link: false
+      more_class: more-link
+      more_text: More
     third_party_settings: {  }
     weight: 0
     region: content

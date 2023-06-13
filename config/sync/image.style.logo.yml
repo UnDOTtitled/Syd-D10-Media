@@ -1,3 +1,4 @@
+uuid: fd58f9ad-5ed7-40f0-9315-2097dc6f6945
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +8,7 @@ name: logo
 label: Logo
 effects:
   e43775f6-f325-4819-8320-76fa62198293:
+    uuid: ''
     id: image_scale
     weight: 1
     data:

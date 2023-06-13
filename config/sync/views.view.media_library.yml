@@ -1,3 +1,4 @@
+uuid: fdd6b525-50a5-4ed2-8e1e-9d2f7991c439
 langcode: en
 status: true
 dependencies:
@@ -1171,6 +1172,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
       access:
         type: perm
         options:

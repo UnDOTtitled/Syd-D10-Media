@@ -1,3 +1,4 @@
+uuid: 55e25eda-6ac3-40a5-8876-1dba819305a2
 langcode: en
 status: true
 dependencies:
@@ -36,6 +37,13 @@ content:
       allow_duplicate: true
       collapsible: false
       collapsed: false
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

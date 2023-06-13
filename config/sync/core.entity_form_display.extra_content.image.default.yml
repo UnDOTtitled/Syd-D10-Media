@@ -1,3 +1,4 @@
+uuid: d6258244-76bd-42b3-8161-daf2cada0b63
 langcode: en
 status: true
 dependencies:
@@ -27,6 +28,13 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

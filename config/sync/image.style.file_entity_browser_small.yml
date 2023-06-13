@@ -1,3 +1,4 @@
+uuid: e88f9f68-9bb1-40b7-890f-2fef4e259830
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +8,7 @@ name: file_entity_browser_small
 label: 'File Entity Browser small thumbnail'
 effects:
   374fe20a-a27c-45f5-b76d-d851cabcf7b0:
+    uuid: ''
     id: image_scale_and_crop
     weight: 1
     data:

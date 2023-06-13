@@ -1,3 +1,4 @@
+uuid: 20d47519-9d2d-4dc7-89bc-b5585eace2ee
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,7 @@ name: media_library
 label: 'Media Library thumbnail (220×220)'
 effects:
   75b076a8-1234-4b42-85db-bf377c4d8d5f:
+    uuid: ''
     id: image_scale
     weight: 0
     data:

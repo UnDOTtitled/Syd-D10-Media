@@ -1,3 +1,4 @@
+uuid: 987e5601-82ef-47cc-b97d-ab3254bf9a9c
 langcode: en
 status: true
 dependencies:
@@ -27,6 +28,13 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

@@ -1,3 +1,4 @@
+uuid: f0144f6b-ab48-46eb-a300-69702e928757
 langcode: en
 status: true
 dependencies:
@@ -20,6 +21,13 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

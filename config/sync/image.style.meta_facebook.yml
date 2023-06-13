@@ -1,3 +1,4 @@
+uuid: e3c719d5-ff22-435a-a5a7-1876c21f2a12
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +8,7 @@ name: meta_facebook
 label: 'Meta - Facebook'
 effects:
   d897368d-3137-4ddf-afff-7393abf09ee8:
+    uuid: ''
     id: image_scale_and_crop
     weight: 1
     data:

@@ -1,3 +1,4 @@
+uuid: 66dbec02-d710-4817-bceb-cbc09e352541
 langcode: und
 status: true
 dependencies:
@@ -32,6 +33,7 @@ widget_selector_configuration: {  }
 widgets:
   a4ad947c-9669-497c-9988-24351955a02f:
     id: view
+    uuid: ''
     label: 'Files listing'
     weight: 1
     settings:
@@ -41,6 +43,7 @@ widgets:
       view_display: entity_browser_1
   735d146c-a4b2-4327-a057-d109e0905e05:
     id: dropzonejs
+    uuid: ''
     label: 'Upload files'
     weight: 0
     settings:
@@ -53,6 +56,6 @@ widgets:
       clientside_resize: false
       resize_width: null
       resize_height: null
-      resize_quality: !!float 1
+      resize_quality: 1.0
       resize_method: contain
       thumbnail_method: contain

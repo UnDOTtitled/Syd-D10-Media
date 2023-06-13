@@ -1,3 +1,4 @@
+uuid: 8cc4c5e3-30c1-4ca5-8564-d20c855f3dfc
 langcode: en
 status: true
 dependencies: {  }
@@ -5,6 +6,7 @@ name: inline_image
 label: 'Inline image'
 effects:
   7a565907-7831-45ae-8df7-bc1f642762da:
+    uuid: ''
     id: image_scale
     weight: 1
     data:

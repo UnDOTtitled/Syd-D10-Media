@@ -1,3 +1,4 @@
+uuid: e3c44246-02b1-4013-b1f7-55872632a8de
 langcode: en
 status: true
 dependencies:
@@ -14,3 +15,4 @@ type_settings:
   bundles: {  }
   display_plugins: {  }
 icon: {  }
+icon_uuid: null

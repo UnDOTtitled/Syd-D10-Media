@@ -1,3 +1,4 @@
+uuid: 634b3a31-6e68-468b-be99-5cd32d2e170c
 langcode: en
 status: true
 dependencies:
@@ -40,13 +41,9 @@ settings:
             - Copy
             - PasteFromWord
   plugins:
-    stylescombo:
-      styles: ''
     drupallink:
       linkit_enabled: true
       linkit_profile: default
-    language:
-      language_list: un
 image_upload:
   status: false
   scheme: public

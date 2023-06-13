@@ -1,3 +1,4 @@
+uuid: 54d371f8-995d-4d2a-9c2a-2679c430a810
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +8,7 @@ name: teaser_thumb
 label: 'Teaser thumbmail'
 effects:
   777146e9-985a-479b-aa9e-71123e9a4444:
+    uuid: ''
     id: image_scale_and_crop
     weight: 1
     data:
