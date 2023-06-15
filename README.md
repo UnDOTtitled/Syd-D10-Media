@@ -1,5 +1,5 @@
 # Syd D10
 
-Pantheon based Drupal 9 upstream
+Pantheon based Drupal 10 upstream
 
 WIKI - [https://github.com/UnDOTtitled/Syd-D10-Media/wiki]
