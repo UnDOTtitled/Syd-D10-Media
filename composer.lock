@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2bc1d0bd169db34865296fe24da6871",
+    "content-hash": "1dec23364c52d41d039a1ee5bbe2a4a1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4145,11 +4145,17 @@
         },
         {
             "name": "drupal/rename_admin_paths",
-            "version": "dev-2.x",
+            "version": "2.2.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rename_admin_paths.git",
-                "reference": "e2a72bec8b0f847583b44de349ef4f23b1900a36"
+                "reference": "8.x-2.2-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rename_admin_paths-8.x-2.2-beta1.zip",
+                "reference": "8.x-2.2-beta1",
+                "shasum": "6539896f3699d1a1ea05e181c657fefbd379ebe8"
             },
             "require": {
                 "drupal/core": ">=8.9",
@@ -4157,15 +4163,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.1+1-dev",
-                    "datestamp": "1675774469",
+                    "version": "8.x-2.2-beta1",
+                    "datestamp": "1686662937",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4177,6 +4180,10 @@
                 {
                     "name": "Raphael Apard",
                     "homepage": "https://www.drupal.org/user/410831"
+                },
+                {
+                    "name": "rjjakes",
+                    "homepage": "https://www.drupal.org/user/3457245"
                 },
                 {
                     "name": "slootjes",
@@ -4970,16 +4977,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "12.0.2",
+            "version": "12.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "c2b51cf5c0b537cc989513ccaa05e3e229104d4f"
+                "reference": "fa0112f58b989fc519a7a697340b3922df40888d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/c2b51cf5c0b537cc989513ccaa05e3e229104d4f",
-                "reference": "c2b51cf5c0b537cc989513ccaa05e3e229104d4f",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/fa0112f58b989fc519a7a697340b3922df40888d",
+                "reference": "fa0112f58b989fc519a7a697340b3922df40888d",
                 "shasum": ""
             },
             "require": {
@@ -5101,7 +5108,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/12.0.2"
+                "source": "https://github.com/drush-ops/drush/tree/12.1.0"
             },
             "funding": [
                 {
@@ -5109,7 +5116,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-09T13:08:27+00:00"
+            "time": "2023-06-15T02:28:59+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -5180,10 +5187,10 @@
         },
         {
             "name": "enyo/dropzone",
-            "version": "5.9.3",
+            "version": "5.7.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/enyo/dropzone/archive/v5.9.3.zip"
+                "url": "https://github.com/enyo/dropzone/archive/v5.7.2.zip"
             },
             "type": "drupal-library"
         },
@@ -10761,16 +10768,16 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.19",
+            "version": "8.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pfrenssen/coder.git",
-                "reference": "9a152b41efb39b66dd452da5e94e3b852a13b027"
+                "reference": "88055e40931a56074b6510a631d3403794c91625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/9a152b41efb39b66dd452da5e94e3b852a13b027",
-                "reference": "9a152b41efb39b66dd452da5e94e3b852a13b027",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/88055e40931a56074b6510a631d3403794c91625",
+                "reference": "88055e40931a56074b6510a631d3403794c91625",
                 "shasum": ""
             },
             "require": {
@@ -10784,7 +10791,7 @@
             },
             "require-dev": {
                 "phpstan/phpstan": "^1.7.12",
-                "phpunit/phpunit": "^7.0 || ^8.0"
+                "phpunit/phpunit": "^8.0"
             },
             "type": "phpcodesniffer-standard",
             "autoload": {
@@ -10808,7 +10815,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2023-05-06T10:16:21+00:00"
+            "time": "2023-06-15T07:16:09+00:00"
         },
         {
             "name": "drupal/core-dev",
@@ -10997,16 +11004,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.1.34",
+            "version": "1.1.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "1422ca153874935bb4f8efd98b0b3b2e8aa7cb0c"
+                "reference": "7da46c12bd556dca5855ee76b8621815d85714fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/1422ca153874935bb4f8efd98b0b3b2e8aa7cb0c",
-                "reference": "1422ca153874935bb4f8efd98b0b3b2e8aa7cb0c",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/7da46c12bd556dca5855ee76b8621815d85714fe",
+                "reference": "7da46c12bd556dca5855ee76b8621815d85714fe",
                 "shasum": ""
             },
             "require": {
@@ -11081,7 +11088,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.34"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.35"
             },
             "funding": [
                 {
@@ -11097,7 +11104,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-24T21:12:15+00:00"
+            "time": "2023-06-14T20:38:19+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -11699,16 +11706,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.18",
+            "version": "1.10.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "52b6416c579663eebdd2f1d97df21971daf3b43f"
+                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/52b6416c579663eebdd2f1d97df21971daf3b43f",
-                "reference": "52b6416c579663eebdd2f1d97df21971daf3b43f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
+                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
                 "shasum": ""
             },
             "require": {
@@ -11757,7 +11764,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-07T22:00:43+00:00"
+            "time": "2023-06-14T15:26:58+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

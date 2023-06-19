@@ -16,10 +16,10 @@
             "type": "package",
             "package": {
                 "name": "enyo/dropzone",
-                "version": "5.9.3",
+                "version": "5.7.2",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/enyo/dropzone/archive/v5.9.3.zip",
+                    "url": "https://github.com/enyo/dropzone/archive/v5.7.2.zip",
                     "type": "zip"
                 }
             }
@@ -108,7 +108,7 @@
         "drupal/video_embed_field": "^2.5",
         "drupal/view_unpublished": "^1.1",
         "drupal/xmlsitemap": "^1.4",
-        "enyo/dropzone": "^5.9",
+        "enyo/dropzone": "^5.7",
         "kint-php/kint": "^4.2",
         "pantheon-upstreams/upstream-configuration": "dev-main",
         "unt/adminimal_theme": "1.x-dev@dev"
