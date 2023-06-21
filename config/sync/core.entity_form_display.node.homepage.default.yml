@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.homepage.body
     - field.field.node.homepage.field_banner_image
+    - field.field.node.homepage.field_meta_tags
     - node.type.homepage
   module:
     - field_group
     - media_library
+    - metatag
     - path
     - text
 third_party_settings:
@@ -69,6 +71,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 27
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   path:
     type: path
