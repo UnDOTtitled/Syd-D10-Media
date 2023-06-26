@@ -175,6 +175,9 @@
         "patches": {
             "unt/adminimal_theme": {
                 "Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-05-23/3296538-12.patch"
+            },
+            "drupal/xmlsitemap": {
+                "Fix for xmlsitemap": "https://www.drupal.org/files/issues/2023-01-16/3323148.patch"
             }
         }
     },

@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: NXhscRe0440PFpI5dSznEVgmauL25KojD7u4e9aZwOM
-label: 'https://dev-unt-d9.pantheonsite.io'
+label: 'https://dev-unt.pantheonsite.io'
 context: {  }
