@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1dec23364c52d41d039a1ee5bbe2a4a1",
+    "content-hash": "6af948fb8923e99064dc6fd2962647d6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1566,6 +1566,64 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/adminimal_theme",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/adminimal_theme.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "0fe020fecab6a1f6d877f2e622fb9f916ada52bb"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "drupal/seven": "~1.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1691504486",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ANDiTKO",
+                    "homepage": "https://www.drupal.org/user/1428124"
+                },
+                {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
+                    "name": "realityloop",
+                    "homepage": "https://www.drupal.org/user/139189"
+                },
+                {
+                    "name": "rjjakes",
+                    "homepage": "https://www.drupal.org/user/3457245"
+                }
+            ],
+            "description": "Drupal administration theme with modern minimalist design.",
+            "homepage": "https://www.drupal.org/project/adminimal_theme",
+            "support": {
+                "source": "https://git.drupalcode.org/project/adminimal_theme",
+                "issues": "https://www.drupal.org/project/issues/adminimal_theme"
             }
         },
         {
@@ -3445,21 +3503,20 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "2.0.0-rc4",
+            "version": "1.0.0-rc15",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "2.0.0-rc4"
+                "reference": "8.x-1.0-rc15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-2.0.0-rc4.zip",
-                "reference": "2.0.0-rc4",
-                "shasum": "8f5f3e831117b223f60c8bee43a22d3ee1020bfd"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc15.zip",
+                "reference": "8.x-1.0-rc15",
+                "shasum": "7702801f7e599956fc3d10cff8257809f53ac3ec"
             },
             "require": {
-                "drupal/core": "^9.1 || ^10",
-                "drupal/rat": "^1.0.0@rc",
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "php": ">=7.1"
             },
             "require-dev": {
@@ -3468,8 +3525,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-rc4",
-                    "datestamp": "1685028830",
+                    "version": "8.x-1.0-rc15",
+                    "datestamp": "1678126675",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -4013,39 +4070,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/publishcontent"
             }
-        },
-        {
-            "name": "drupal/rat",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/rat.git",
-                "reference": "6d1d2af01e03b773f8413686863de581586959a6"
-            },
-            "require": {
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "drupal/core": "^9.4",
-                "drupal/core-dev": "^9.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\rat\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "gpl-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Merlin",
-                    "email": "merlin@geeks4change.net"
-                }
-            ],
-            "time": "2022-11-09T20:50:47+00:00"
         },
         {
             "name": "drupal/rebuild_cache_access",
@@ -9772,15 +9796,6 @@
             "time": "2023-06-08T12:52:13+00:00"
         },
         {
-            "name": "unt/adminimal_theme",
-            "version": "1.x-dev@dev",
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.x-dev.zip"
-            },
-            "type": "drupal-theme"
-        },
-        {
             "name": "webflo/drupal-finder",
             "version": "1.2.2",
             "source": {
@@ -14067,8 +14082,7 @@
         "drupal/linkit": 5,
         "drupal/m4032404": 15,
         "drupal/rename_admin_paths": 20,
-        "pantheon-upstreams/upstream-configuration": 20,
-        "unt/adminimal_theme": 20
+        "pantheon-upstreams/upstream-configuration": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
