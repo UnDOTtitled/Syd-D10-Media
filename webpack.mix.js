@@ -7,7 +7,7 @@
 /**
  * Local setup
  */
-const hostname = 'syd.local'
+const hostname = 'syd-d10-media.ddev.site'
 
 /**
  * Dependencies
