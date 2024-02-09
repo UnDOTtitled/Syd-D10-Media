@@ -3,14 +3,14 @@ global:
   version: 1.x
   css:
     theme:
-      dist/css/global.css: {}
-      dist/css/print.css: { media: print }
+      dist/css/global.min.css: {}
+      dist/css/print.min.css: { media: print }
   js:
     https://cdn.polyfill.io/v2/polyfill.js: { type: external }
-    dist/js/defaults.js: {}
-    dist/js/global.js: {}
+    dist/js/defaults.min.js: {}
+    dist/js/global.min.js: {}
 
 emmsg:
   version: 1.x
   js:
-    dist/js/emmsg.js: {}
+    dist/js/emmsg.min.js: {}

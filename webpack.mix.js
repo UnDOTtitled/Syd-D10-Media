@@ -132,3 +132,9 @@ if (mix.inProduction()) {
     ],
   })
 }
+
+mix.minify(`${themeDirectory}/dist/js/global.js`)
+mix.minify(`${themeDirectory}/dist/js/emmsg.js`)
+mix.minify(`${themeDirectory}/dist/js/defaults.js`)
+mix.minify(`${themeDirectory}/dist/css/global.css`)
+mix.minify(`${themeDirectory}/dist/css/print.css`)
