@@ -19,6 +19,7 @@
     "baguettebox.js": "^1.11.1",
     "focus-visible": "^5.2.0",
     "focus-within": "^3.0.2",
+    "focus-trap-js": "^1.1.0",
     "include-media": "^1.4.9",
     "js-cookie": "^2.2.1",
     "normalize.scss": "^0.1.0",

@@ -5,6 +5,7 @@ import LazyLoad from 'vanilla-lazyload'
 import toggleDataAttr from './utils/toggleDataAttr'
 import 'van11y-accessible-accordion-aria'
 import baguetteBox from 'baguettebox.js'
+// import ModalFocusTrap from './classes/ModalFocusTrap';
 //import Choices from 'choices.js';
 
 /**
@@ -80,3 +81,17 @@ const lazyLoadImages = new LazyLoad()
   - Set edge offset to 0 to prevnet breaking tab order
 */
 zenscroll.setup(null, 0)
+
+
+/*
+  ModalFocusTrap
+
+const ModalContainers = document.querySelectorAll('.js-popup-modal');
+
+if (ModalContainers) {
+  ModalContainers.forEach((ModalContainer: HTMLElement) => {
+    new ModalFocusTrap(ModalContainer);
+  })
+}
+
+*/
