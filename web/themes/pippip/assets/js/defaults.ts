@@ -84,6 +84,39 @@ zenscroll.setup(null, 0)
 
 
 /*
+  Skip to next
+  
+  Example of usage:
+
+  <a href="javascript:void(0)" class="screen-readers js-skip-to-next" >
+    <span class="screen-readers">Skip the {{ content.title[0]["#context"].value }} section</span>
+  </a>
+  
+*/
+
+const skipToNexts = document.querySelectorAll('.js-skip-to-next');
+
+skipToNexts.forEach(skipToNext => {
+
+  const eckWrapper = skipToNext.nextElementSibling as HTMLElement;
+
+  skipToNext.addEventListener("click", () => {
+
+    if (eckWrapper) {
+      const focusableElements = eckWrapper.querySelectorAll(
+        'a, button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"]), td > div'
+      );
+
+      focusableElements.forEach(focusableElement => {
+        focusableElement.setAttribute("tabindex", "-1");
+      })
+    }
+  });
+  
+});
+
+
+/*
   ModalFocusTrap
 
 const ModalContainers = document.querySelectorAll('.js-popup-modal');

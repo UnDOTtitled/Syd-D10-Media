@@ -14,7 +14,7 @@ $width-line: $bump * 1.5;
 $height-line: 4px;
 
 $rotation: 45deg;
-$translateY: ($height-icon / 2);
+$translateY: calc($height-icon / 2);
 $translateX: 0;
 
 /**
@@ -46,14 +46,14 @@ $translateX: 0;
     height: $height-line;
     position: absolute;
     left: 0;
-    border-radius: ($height-line / 2);
+    border-radius: calc($height-line / 2);
     transition: var(--transition);
 
     &-1 {
       top: 0;
 
       :hover > & {
-        transform: translateY($height-line / 2 * -1);
+        transform: translateY(calc(calc($height-line / 2) * -1));
       }
 
       [data-nav='open'] & {
@@ -72,7 +72,7 @@ $translateX: 0;
       top: 100%;
 
       :hover > & {
-        transform: translateY($height-line / 2);
+        transform: translateY(calc($height-line / 2));
       }
 
       [data-nav='open'] & {
