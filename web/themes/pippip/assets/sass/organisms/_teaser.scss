@@ -28,6 +28,28 @@
       transition: var(--transition);
     }
 
+    picture {
+      &:after {
+        padding-bottom: 81%;
+      }
+
+      img {
+        &.lazy {
+          content: "";
+          position: relative;
+          display: block;
+          padding-bottom: 81%;
+
+          &.loaded {
+            padding-bottom: 0;
+          }
+          &.error {
+            padding-bottom: 81%;
+          }
+        }
+      }
+    }
+
     &:hover {
       img {
         opacity: 0.6;
