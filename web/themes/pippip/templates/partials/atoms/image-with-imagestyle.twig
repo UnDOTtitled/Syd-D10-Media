@@ -29,7 +29,7 @@
             <source media="(max-width: 992px)" data-srcset="{{ imageMd }}" type="image/jpeg">
             {# <source data-srcset="{{ imageBg|replace({ (jpg): webp }) }}" type="image/webp"> #}
             <source data-srcset="{{ imageBg }}" type="image/jpeg">
-            <img data-src="{{ imageBg }}" alt="{{ alt }}" class="lazy" />
+            <img data-src="{{ imageBg }}" {{ title ? create_attribute().setAttribute('title', title) : "" }} {{ alt ? create_attribute().setAttribute('alt', alt) : "" }} {{ lazyDisable ? "" : create_attribute().setAttribute('class', 'lazy')  }}/>
         </picture>
     {% else %}
         {% set imageWithStyle = image|image_style(imageStyle) %}
@@ -37,7 +37,7 @@
         <picture>
             <source data-srcset="{{ imageWithStyle|replace({ (jpg): webp }) }}" type="image/webp">
             <source data-srcset="{{ imageWithStyle }}" type="image/jpeg">
-            <img src="{{ imageWithStyle }}" alt="{{ alt }}" title="{{ title }}" />
+            <img src="{{ imageWithStyle }}" {{ title ? create_attribute().setAttribute('title', title) : "" }} {{ alt ? create_attribute().setAttribute('alt', alt) : "" }} {{ lazyDisable ? "" : create_attribute().setAttribute('class', 'lazy')  }}/>
         </picture>
     {% endif %}
 
@@ -46,7 +46,7 @@
     <picture>
         <source data-srcset="{{ imageWithStyle|replace({ (jpg): webp }) }}" type="image/webp">
         <source data-srcset="{{ imageWithStyle }}" type="image/jpeg">
-        <img src="{{ imageWithStyle }}" alt="{{ alt }}" title="{{ title }}" />
+        <img src="{{ imageWithStyle }}" {{ title ? create_attribute().setAttribute('title', title) : "" }} {{ alt ? create_attribute().setAttribute('alt', alt) : "" }} {{ lazyDisable ? "" : create_attribute().setAttribute('class', 'lazy')  }}/>
     </picture>
 
 {% endif %}

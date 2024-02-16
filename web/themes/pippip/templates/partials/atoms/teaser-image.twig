@@ -12,5 +12,5 @@
 <picture>
 	{# <source data-srcset="{{ imageBig|replace({ (jpg): webp }) }}" type="image/webp"> #}
 	<source data-srcset="{{ imageBig }}" type="image/jpeg">
-	<img data-src="{{ imageBig }}" alt="{{ alt }}" class="lazy" />
+	<img data-src="{{ imageBig }}" {{ title ? create_attribute().setAttribute('title', title) : "" }} {{ alt ? create_attribute().setAttribute('alt', alt) : "" }} {{ lazyDisable ? "" : create_attribute().setAttribute('class', 'lazy')  }} />
 </picture>
