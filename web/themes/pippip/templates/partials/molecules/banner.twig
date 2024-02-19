@@ -1,4 +1,4 @@
-{% if node.field_banner_image.entity.field_media_image_3.entity.fileuri |render %}
+{% if content.field_banner_image["#items"][0].entity.field_media_image_3[0].entity.uri.value |render %}
 	<div class="m-banner m-banner--{{ ct }}" aria-label="Page banner">
 
 		<div class="m-banner__copy">
@@ -17,12 +17,14 @@
 
 		<figure class="m-banner__image">
 
-			{% set imageUrl = node.field_banner_image.entity.field_media_image_3.entity.fileuri %}
 			{% include '@pippip/partials/atoms/banner-image.twig' with {
-				image: imageUrl, 
+				image: content.field_banner_image["#items"][0].entity.field_media_image_3[0].entity.uri.value, 
 				alt: content.field_banner_image["#items"][0].entity.field_media_image_3[0].alt,
-				lazyDisable: true,
-			}%}
+				title: content.field_banner_image["#items"][0].entity.field_media_image_3[0].title,
+				height: node.field_banner_image[0].entity.field_media_image_3[0].height,
+				width: node.field_banner_image[0].entity.field_media_image_3[0].width,
+				lazyDisable: lazyDisable == false ? lazyDisable : true,
+			}%}    
 
 			{% include '@pippip/partials/atoms/image-credit.twig' with {credit: node.field_banner_image.entity.field_image_credit.getValue()[0]['value']} %}
 		</figure>
