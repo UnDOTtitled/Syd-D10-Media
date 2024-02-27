@@ -6,6 +6,9 @@ import toggleDataAttr from './utils/toggleDataAttr'
 import 'van11y-accessible-accordion-aria'
 import baguetteBox from 'baguettebox.js'
 // import ModalFocusTrap from './classes/ModalFocusTrap';
+import YouTubePlayer, { YouTubePlayerOptions } from './classes/YtPlayer';
+import SlickSlider from './classes/SlickSlider'; // Assuming SlickSlider.ts is in the same directory
+
 //import Choices from 'choices.js';
 
 /**
@@ -128,3 +131,40 @@ if (ModalContainers) {
 }
 
 */
+
+
+
+/* 
+*
+Initiate Slider
+*
+*/
+const slickSlider = new SlickSlider();
+
+
+
+/* 
+*
+Initiate Youtube Api
+*
+*/
+const videoId = document.querySelector('#ytplayer')?.getAttribute(`data-videoId`).substring(0, 11);
+
+if (videoId) {
+  const options: YouTubePlayerOptions = {
+    height: '360',
+    width: '640',
+    videoId: videoId,
+    playerVars: {
+      autoplay: 1,
+      controls: 0,
+      showinfo: 0,
+      loop: 1,
+      mute: 1,
+      rel: 1,
+      playlist: videoId,
+    },
+  };
+
+  const youTubePlayer = new YouTubePlayer(videoId, options);
+}

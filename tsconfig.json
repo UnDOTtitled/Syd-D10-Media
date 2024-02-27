@@ -14,7 +14,7 @@
     "files": ["./web/themes/pippip/assets/types/index.d.ts"],
     "include": [
       "./web/themes/pippip/assets/js/**/*.ts",
-      "./web/themes/pippip/assets/js/**/*.tsx"
-    ],
+      "./web/themes/pippip/assets/js/**/*.tsx",
+      "web/themes/pippip/assets/js/classes/SlickSlider.ts"    ],
     "exclude": ["node_modules", "./web/themes/pippip/dist", "./*.js"]
   }

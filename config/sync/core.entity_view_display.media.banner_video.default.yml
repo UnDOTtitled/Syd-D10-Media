@@ -5,21 +5,16 @@ dependencies:
   config:
     - field.field.media.banner_video.field_media_oembed_video_1
     - media.type.banner_video
-  module:
-    - media
 id: media.banner_video.default
 targetEntityType: media
 bundle: banner_video
 mode: default
 content:
   field_media_oembed_video_1:
-    type: oembed
+    type: string
     label: hidden
     settings:
-      max_width: 0
-      max_height: 0
-      loading:
-        attribute: lazy
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content
