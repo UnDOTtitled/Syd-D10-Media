@@ -16,10 +16,11 @@
     "cypress": "export NODE_ENV=development && cypress open"
   },
   "dependencies": {
+    "@types/slick-carousel": "^1.6.40",
     "baguettebox.js": "^1.11.1",
+    "focus-trap-js": "^1.1.0",
     "focus-visible": "^5.2.0",
     "focus-within": "^3.0.2",
-    "focus-trap-js": "^1.1.0",
     "include-media": "^1.4.9",
     "js-cookie": "^2.2.1",
     "normalize.scss": "^0.1.0",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.17",
     "@types/focus-within": "^1.0.0",
+    "@types/jquery": "^3.5.29",
     "@types/js-cookie": "^2.2.6",
     "@types/zenscroll": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^4.15.1",

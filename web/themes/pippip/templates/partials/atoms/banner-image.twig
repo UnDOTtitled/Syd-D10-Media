@@ -5,6 +5,12 @@
 {% set imageMd = image|image_style('banner_image_md') %}
 {% set imageBig = image|image_style('banner_image') %}
 
+{# {% set imageSm = image %}
+{% set imageMd = image %}
+{% set imageBig = image %} #}
+
+{# {{ dd(image|image_style('banner_image')) }} #}
+
 <picture>
 	{# <source media="(max-width: 600px)" srcset="{{ imageSm|replace({ (jpg): webp }) }}" type="image/webp"> #}
 	<source media="(max-width: 600px)" srcset="{{ imageSm }}" type="image/jpeg">

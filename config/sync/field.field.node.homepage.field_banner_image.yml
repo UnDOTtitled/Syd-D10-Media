@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_banner_image
     - media.type.banner_image
+    - media.type.banner_video
+    - media.type.banner_video_upload
     - node.type.homepage
 id: node.homepage.field_banner_image
 field_name: field_banner_image
 entity_type: node
 bundle: homepage
-label: 'Banner Image'
+label: Banner
 description: ''
 required: false
 translatable: false
@@ -21,9 +23,11 @@ settings:
   handler_settings:
     target_bundles:
       banner_image: banner_image
+      banner_video: banner_video
+      banner_video_upload: banner_video_upload
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: banner_image
 field_type: entity_reference

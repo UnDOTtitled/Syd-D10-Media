@@ -1,7 +1,7 @@
-{% if content.field_banner_image["#items"][0].entity.field_media_image_3[0].entity.uri.value |render %}
+{% if content.field_banner_image |render %}
 	<div class="m-banner m-banner--{{ ct }}" aria-label="Page banner">
 
-		<div class="m-banner__copy">
+		{# <div class="m-banner__copy">
 			<div class="grid">
 				<div class="col-sm-12">
 					
@@ -13,21 +13,23 @@
 
 				</div>
 			</div>
-		</div>
+		</div> #}
 
-		<figure class="m-banner__image">
 
-			{% include '@pippip/partials/atoms/banner-image.twig' with {
-				image: content.field_banner_image["#items"][0].entity.field_media_image_3[0].entity.uri.value, 
-				alt: content.field_banner_image["#items"][0].entity.field_media_image_3[0].alt,
-				title: content.field_banner_image["#items"][0].entity.field_media_image_3[0].title,
-				height: node.field_banner_image[0].entity.field_media_image_3[0].height,
-				width: node.field_banner_image[0].entity.field_media_image_3[0].width,
-				lazyDisable: lazyDisable == false ? lazyDisable : true,
-			}%}    
-
-			{% include '@pippip/partials/atoms/image-credit.twig' with {credit: node.field_banner_image.entity.field_image_credit.getValue()[0]['value']} %}
-		</figure>
+		{% if content.field_banner_image[1]|render %}
+			<div class="swiper">
+				<div class="swiper-wrapper desktop-slider">
+						<div class="swiper-slide">
+							{{ content.field_banner_image }}
+						</div>
+				</div>
+				<button class="swiper-pause  desktop-slider-pause"></button>
+			</div>
+		{% else %}
+			<figure class="m-banner__image">
+				{{ content.field_banner_image }}
+			</figure>
+		{% endif %}
 
 	</div>
 
