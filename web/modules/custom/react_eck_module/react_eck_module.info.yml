@@ -1,0 +1,5 @@
+name: 'React ECK Module'
+type: module
+description: 'Module to handle rendering of ECK toolkit components using react'
+package: Custom
+core_version_requirement: ^10

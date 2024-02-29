@@ -9,8 +9,14 @@ global:
     https://cdn.polyfill.io/v2/polyfill.js: { type: external }
     dist/js/defaults.min.js: {}
     dist/js/global.min.js: {}
+    dist/js/reactEckModule.js: {}
 
 emmsg:
   version: 1.x
   js:
     dist/js/emmsg.min.js: {}
+
+reactEckModule:
+  version: 1.1
+  js:
+    dist/js/reactEckModule.js: { preprocess: false }

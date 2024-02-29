@@ -2,6 +2,7 @@
     "/js/defaults.js": "/js/defaults.js",
     "/js/emmsg.js": "/js/emmsg.js",
     "/js/global.js": "/js/global.js",
+    "/js/reactEckModule.js": "/js/reactEckModule.js",
     "/css/print.css": "/css/print.css",
     "/css/global.css": "/css/global.css",
     "/js/global.min.js": "/js/global.min.js",

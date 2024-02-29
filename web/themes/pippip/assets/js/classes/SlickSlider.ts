@@ -12,8 +12,6 @@ class SlickSlider {
     this.desktopSlider = document.querySelector('.js-desktop-slider');
     this.toggleDataAttr = toggleDataAttr;
 
-    console.log('SlickSlider');
-
     if (this.mobileSlider) {
       this.initMobileSlider();
     }

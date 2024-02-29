@@ -44,6 +44,7 @@ mix.browserSync({
     `${themeAssets}/js/**/*.js`,
     `${themeAssets}/js/**/*.ts`,
     `${themeAssets}/js/**/*.tsx`,
+    `./web/modules/custom/react_eck_module/assets/js/**/*.tsx`
   ],
 })
 
@@ -66,6 +67,7 @@ glob.sass(`${themeAssets}/sass/*.scss`, 'css')
 glob.js(`${themeAssets}/js/*.js`, 'js')
 glob.js(`${themeAssets}/js/*.ts`, 'js')
 glob.js(`${themeAssets}/js/*.tsx`, 'js')
+glob.js(`./web/modules/custom/react_eck_module/assets/js/reactEckModule.tsx`, 'js')
 mix.copyDirectory(`${themeAssets}/font`, `${themeDirectory}/dist/font`)
 
 /**
