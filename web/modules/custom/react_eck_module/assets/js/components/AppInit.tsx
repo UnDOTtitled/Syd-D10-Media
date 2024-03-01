@@ -1,23 +1,18 @@
-import React, { createContext, useEffect, useState } from 'react'
-import { EckEntityContextT } from './utils/types'
+import React, { useEffect, useState } from 'react'
+import { Data } from './utils/types'
 import AppContainer from './AppContainer'
-import ContentFetch from './data/ContentFetch'
-
-export const eckEntityContext = createContext<Partial<EckEntityContextT>>(null)
+import DataFetch from './data/DataFetch'
 
 /**
  * Get data, set state & prepare app
  */
-type Props = {
-    eckEntity: string,
-}
 
-export default function App({eckEntity} : Props) {
-    const [loadedEckData, setLoadedEckData] = useState(null);
+export default function App() {
+    const [loadedEckData, setLoadedEckData] = useState<Data>(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const data = await ContentFetch(eckEntity);
+        const fetchData = () => {
+            const data = DataFetch() as Data
             setLoadedEckData(data);
         };
 
@@ -25,8 +20,6 @@ export default function App({eckEntity} : Props) {
     }, []);
 
     return (
-        <eckEntityContext.Provider value={loadedEckData}>
-            <AppContainer eckEntity={eckEntity} />
-        </eckEntityContext.Provider>
+        <AppContainer loadedEckData={loadedEckData} />
     )
 }

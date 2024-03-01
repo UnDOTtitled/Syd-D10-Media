@@ -8,17 +8,6 @@ export enum AppState {
   IS_LOADING = 'IS_LOADING',
   ERROR = 'ERROR',
 }
-
-export type StateContextT = {
-  state: State
-  data: Data
-}
-
-export type DispatchContextT = {
-  dispatch: React.Dispatch<any>
-  dataDispatch: React.Dispatch<any>
-}
-
 export type EckEntityContextT = {
   eckEntity: string
 }
@@ -28,24 +17,15 @@ export type State = {
   error: boolean
 }
 
-export type Data = {
-  loadedAppData?: [],
-}
+export type Data = Array<{
+  title: string;
+  copy: string;
+}>;
 
-export type DataAction = {
-  type: AppData
-  mode: []
-}
 
 export type StateAction = {
   type: AppState
   mode: any
   action: any
   initial: any
-}
-
-export type NodeEntity = {
-  nid: number
-  name: string
-  slug?: string
 }

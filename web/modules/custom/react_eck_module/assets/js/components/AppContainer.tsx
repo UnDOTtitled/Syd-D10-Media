@@ -1,30 +1,23 @@
-// @ts-nocheck
-
-import React, { useContext, useRef, useEffect } from 'react'
-
-// import AppParams from "./AppParams";
-import {AppState} from "./utils/types";
-import Accordion from "./eck/Accordion";
-
-// import Listing from "./elements/Listing";
-import Filters from "./elements/Filters";
-import ActiveFilters from "./elements/ActiveFilters";
-import DatePicker from "./elements/DatePicker";
+import React, { useContext } from 'react'
+import { Data, EckEntityContextT } from './utils/types'
+import Accordion from "./eck/Accordion/Accordion";
+import { eckEntityContext } from '../reactEckModule'
 
 type Props = {
-    eckEntity: string
+    loadedEckData: Data
 }
 
-export default function AppContainer({
-    submit, eckEntity
-} : Props) {
+
+
+export default function AppContainer({ loadedEckData } : Props) {
       
+    const { eckEntity } = useContext(eckEntityContext)
+
     return (
         <>
-            {
-                {
-                'accordion':  <Accordion eckEntity={eckEntity} />
-                }[eckEntity]
+            {loadedEckData ? {
+                'accordion':  <Accordion loadedEckData={loadedEckData} />
+                }[eckEntity || ''] : ''
             }
         </>
     )

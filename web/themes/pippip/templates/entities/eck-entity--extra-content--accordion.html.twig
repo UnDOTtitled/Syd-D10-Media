@@ -1,10 +1,9 @@
 {% extends "eck-entity--extra-content.html.twig" %}
 
 {% block content %}
+  {% include '@pippip/partials/atoms/content-toolkit-title.twig' %}
 
   {# <div id="root" data-eck="{{ eck_entity.bundle|clean_class }}"></div> #}
-
-  {% include '@pippip/partials/atoms/content-toolkit-title.twig' %}
 
   <div class="js-accordion">
     {{ content.field_rows }}
