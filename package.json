@@ -13,7 +13,8 @@
     "dev": "mix",
     "production": "mix --production",
     "start": "mix watch",
-    "cypress": "export NODE_ENV=development && cypress open"
+    "cypress": "export NODE_ENV=development && cypress open",
+    "kill": "killall webpack"
   },
   "dependencies": {
     "@types/youtube": "^0.0.50",
