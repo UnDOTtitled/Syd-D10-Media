@@ -17,18 +17,16 @@ export default function Accordion({ loadedEckData }: Props) {
   }, []);
 
   return (
-    <div className="js-accordion" role="tablist" aria-multiselectable="true" id="accordionGroup">
+    <div className="js-accordion">
     {loadedEckData ? loadedEckData.map((row: { title: string; copy: string; }, i: number) => (
         <React.Fragment key={i}>
-          <h2 className="accordion__title">
+          <h2 className="accordion__title h4">
             <button
               type="button"
               aria-expanded="false"
               className="js-accordion-trigger accordion__header"
               aria-controls={`sect${i}`}
               id={`accordion${i}id`}
-              role="tab"
-              aria-selected="false"
               >
               <span>
                 {row.title}
