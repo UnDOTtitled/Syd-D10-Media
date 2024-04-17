@@ -1,7 +1,7 @@
 ## INTRODUCTION
 
-React Drupal Module for Accessible Accordion Integration
-This module integrates a React component for an accessible accordion functionality into Drupal. It leverages data provided by the JSON API module and the "Accordion" Eck Entity Construction Kit: https://www.drupal.org/project/eck type.
+React Drupal Module for Accessible Accordion Integration (React Eck Module)
+This module, known as the React Eck Module, integrates a React component for an accessible accordion functionality into Drupal. It leverages data provided by the JSON API module and the "Accordion" Eck Entity Construction Kit: https://www.drupal.org/project/eck type.
 
 Functionality:
 
@@ -39,6 +39,10 @@ Legacy Twig Template:
 The previous Twig-based accordion implementation is still available at:
 web/themes/pippip/templates/entities/eck-entity--extra-content--accordion.html.twig
 This legacy template can be re-enabled if necessary. However, the current implementation leverages a React component with a react ID tag for improved maintainability and accessibility.
+
+Extensibility:
+
+The React Eck Module is designed with extensibility in mind. While currently only the accordion entity is rendered via this module, it is built to eventually accommodate all Eck entities within a React framework, if needed. This future-proofs the module for broader integration within your Drupal project.
 
 ## REQUIREMENTS
 
