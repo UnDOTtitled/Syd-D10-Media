@@ -173,9 +173,7 @@
         },
         "enable-patching": true,
         "patches": {
-            "drupal/xmlsitemap": {
-                "Fix for xmlsitemap": "https://www.drupal.org/files/issues/2023-01-16/3323148.patch"
-            }
+
         }
     },
     "autoload": {
@@ -204,7 +202,8 @@
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
-            "zaporylie/composer-drupal-optimizations": true
+            "zaporylie/composer-drupal-optimizations": true,
+            "php-http/discovery": true
         }
     }
 }

@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: social_links
-label: 'Social links'
-revision: 0
-description: ''

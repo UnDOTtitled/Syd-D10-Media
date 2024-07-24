@@ -2,13 +2,11 @@ uuid: 4a45426e-bd9a-4abc-bb05-39c8a150fb5d
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: kGmSGbpgU0ThD8-UKjORklyQ2FSv8bLn9z3iclmIKMg
 name: banner_image
 label: 'Banner Image'
 effects:
   777146e9-985a-479b-aa9e-71123e9a4446:
-    uuid: ''
+    uuid: 777146e9-985a-479b-aa9e-71123e9a4446
     id: image_scale_and_crop
     weight: 1
     data:

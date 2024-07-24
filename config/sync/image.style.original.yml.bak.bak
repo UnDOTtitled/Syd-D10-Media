@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: original
-label: Original
-effects: {  }
-pipeline: __default__

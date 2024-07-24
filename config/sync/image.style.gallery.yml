@@ -2,13 +2,11 @@ uuid: 66f4d53f-07d4-4aef-a0eb-602d8b83954f
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: wADSZshPEHxmzkGH7D3-FMY2r-0E2G13uqIrGPbPra0
 name: gallery
 label: Gallery
 effects:
   9ead6d4b-4b1b-4ce0-9952-8aaaf675f3f4:
-    uuid: ''
+    uuid: 9ead6d4b-4b1b-4ce0-9952-8aaaf675f3f4
     id: image_scale_and_crop
     weight: 1
     data:

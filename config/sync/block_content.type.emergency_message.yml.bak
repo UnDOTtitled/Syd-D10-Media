@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 2n5R5iqyH9Mqhkv7nZedpeZQBLCyZx2T_fIqr2UgRt4
-id: emergency_message
-label: 'Emergency Message'
-revision: 0
-description: ''

@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: TzYl5RjEF4-QIEJLH81oedfxO07MWq-__ZmICvOHNks
-name: 'Raw HTML'
-format: raw_html
-weight: 0
-filters: {  }
