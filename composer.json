@@ -108,6 +108,7 @@
         "drupal/twig_tweak": "^3.2",
         "drupal/video_embed_field": "^2.5",
         "drupal/view_unpublished": "^1.1",
+        "drupal/webp": "^1.0@RC",
         "drupal/xmlsitemap": "^1.4",
         "enyo/dropzone": "^5.7",
         "kint-php/kint": "^4.2",
