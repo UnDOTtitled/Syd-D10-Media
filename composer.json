@@ -62,12 +62,6 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
-        "drupal/core-composer-scaffold": "^11",
-        "drupal/core-recommended": "^11",
-        "pantheon-systems/drupal-integrations": "^11",
-        "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^13",
         "desandro/imagesloaded": "^5.0",
         "desandro/masonry": "^4.2",
         "drupal/admin_toolbar": "^3.4",
@@ -121,7 +115,7 @@
         "pantheon-upstreams/upstream-configuration": "dev-main"
     },
     "require-dev": {
-        "drupal/core-dev": "^11"
+        "drupal/core-dev": "^10"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -171,16 +165,17 @@
         "optimize-autoloader": true,
         "sort-packages": true,
         "platform": {
-            "php": "8.3.11"
+            "php": "8.2.0"
         },
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true,
+            "drupal/core-composer-scaffold": true,
             "php-http/discovery": true,
-            "tbachert/spi": true
+            "phpstan/extension-installer": true,
+            "tbachert/spi": true,
+            "zaporylie/composer-drupal-optimizations": true
         }
     }
 }
